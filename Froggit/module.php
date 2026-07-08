@@ -269,7 +269,7 @@ class Froggit extends IPSModule
 
                 case 'pm1_co2':
                     $this->CreateVarProfileFloat('Froggit.PM_ch', 'Fog', ' µg/m³');
-                    $ID = $this->VariableCreate('float', $key, $this->Translate('PM1.0 particle'), 'Froggit.PM1_ch', 703);
+                    $ID = $this->VariableCreate('float', $key, $this->Translate('PM1.0 particle'), 'Froggit.PM1_ch', 702);
                     if($ID && ($this->GetValue($key) != $value || $SaveAllValues)) {
                         $this->SetValue($key, floatval($value));
                     }
@@ -285,7 +285,7 @@ class Froggit extends IPSModule
 
                 case 'pm25_co2':
                     $this->CreateVarProfileFloat('Froggit.PM_ch', 'Fog', ' µg/m³');
-                    $ID = $this->VariableCreate('float', $key, $this->Translate('PM1.0 particle') . " 24h_avg", 'Froggit.PM25_ch', 703);
+                    $ID = $this->VariableCreate('float', $key, $this->Translate('PM1.0 particle') . " 24h_avg", 'Froggit.PM25_ch', 704);
                     if($ID && ($this->GetValue($key) != $value || $SaveAllValues)) {
                         $this->SetValue($key, floatval($value));
                     }
@@ -294,7 +294,7 @@ class Froggit extends IPSModule
                 case 'pm25_avg_24h':
                 case 'pm25_24h_co2':
                     $this->CreateVarProfileFloat('Froggit.PM_ch', 'Fog', ' µg/m³');
-                    $ID = $this->VariableCreate('float', $key, $this->Translate('PM2.5 particle') . " 24h_avg", 'Froggit.PM25_ch', 703);
+                    $ID = $this->VariableCreate('float', $key, $this->Translate('PM2.5 particle') . " 24h_avg", 'Froggit.PM25_ch', 705);
                     if($ID && ($this->GetValue($key) != $value || $SaveAllValues)) {
                         $this->SetValue($key, floatval($value));
                     }
@@ -302,7 +302,7 @@ class Froggit extends IPSModule
 
                 case 'pm4_co2':
                     $this->CreateVarProfileFloat('Froggit.PM_ch', 'Fog', ' µg/m³');
-                    $ID = $this->VariableCreate('float', $key, $this->Translate('PM4 particle'), 'Froggit.PM4_ch' ,703);
+                    $ID = $this->VariableCreate('float', $key, $this->Translate('PM4 particle'), 'Froggit.PM4_ch' ,706);
                     if($ID && ($this->GetValue($key) != $value || $SaveAllValues)) {
                         $this->SetValue($key, floatval($value));
                     }
@@ -310,7 +310,7 @@ class Froggit extends IPSModule
         
                 case 'pm4_24h_co2':
                     $this->CreateVarProfileFloat('Froggit.PM_ch', 'Fog', ' µg/m³');
-                    $ID = $this->VariableCreate('float', $key, $this->Translate('PM4 particle') . " 24h_avg", 'Froggit.PM4_ch' , 703);
+                    $ID = $this->VariableCreate('float', $key, $this->Translate('PM4 particle') . " 24h_avg", 'Froggit.PM4_ch' , 707);
                     if($ID && ($this->GetValue($key) != $value || $SaveAllValues)) {
                         $this->SetValue($key, floatval($value));
                     }
@@ -318,7 +318,7 @@ class Froggit extends IPSModule
 
                 case 'pm10_co2':
                     $this->CreateVarProfileFloat('Froggit.PM_ch', 'Fog', ' µg/m³');
-                    $ID = $this->VariableCreate('float', $key, $this->Translate('PM10 particle'), 'Froggit.PM10_ch', 703);
+                    $ID = $this->VariableCreate('float', $key, $this->Translate('PM10 particle'), 'Froggit.PM10_ch', 708);
                     if($ID && ($this->GetValue($key) != $value || $SaveAllValues)) {
                         $this->SetValue($key, floatval($value));
                     }
@@ -326,7 +326,7 @@ class Froggit extends IPSModule
 
                 case 'pm10_24h_co2':
                     $this->CreateVarProfileFloat('Froggit.PM_ch', 'Fog', ' µg/m³');
-                    $ID = $this->VariableCreate('float', $key, $this->Translate('PM10 particle') . " 24h_avg", 'Froggit.PM10_ch', 703);
+                    $ID = $this->VariableCreate('float', $key, $this->Translate('PM10 particle') . " 24h_avg", 'Froggit.PM10_ch', 709);
                     if($ID && ($this->GetValue($key) != $value || $SaveAllValues)) {
                         $this->SetValue($key, floatval($value));
                     }
